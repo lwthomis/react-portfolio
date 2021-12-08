@@ -1,0 +1,53 @@
+.content-page-wrapper {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: calc(100vh - 84px);
+
+
+    .right-column {
+        background-color: rgba(192, 179, 179, .3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px;
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            border-bottom: 2px solid black;
+            
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        .me-text {
+            font-size: 1.5em;
+        }
+        .contact-bullet-points {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 21px;
+
+            .bullet-point-group {
+                display: flex;
+                align-items: center;
+            
+                .icon {
+                    font-size: 3em;
+                    color: $teal;
+                }
+
+                .text {
+                    font-size: 2em;
+                    font-weight: 900;
+                    margin-left: 21px;
+                }
+            }
+        }
+    }
+}
